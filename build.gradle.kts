@@ -1,6 +1,10 @@
 plugins {
-    kotlin("jvm") version "1.9.10" // если используешь Kotlin
+    id ("application")
+    kotlin("jvm") version "2.0.0" // если используешь Kotlin
     id("com.github.ben-manes.versions") version "0.51.0"
+}
+application {
+    mainClass = "hexlet.code.App"
 }
 
 group = "hexlet.code"
@@ -18,4 +22,8 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+kotlin {
+    jvmToolchain(21)
 }
