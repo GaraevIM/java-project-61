@@ -1,19 +1,20 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.concurrent.ThreadLocalRandom;
+import java.security.SecureRandom;
 
 public class Calc {
     private static final String DESCRIPTION = "What is the result of the expression?";
     private static final char[] OPS = {'+', '-', '*'};
+    private static final SecureRandom RNG = new SecureRandom();
 
     public static void play() {
         String[][] rounds = new String[Engine.ROUNDS_COUNT][2];
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int a = ThreadLocalRandom.current().nextInt(5, 26);
-            int b = ThreadLocalRandom.current().nextInt(5, 26);
-            char op = OPS[ThreadLocalRandom.current().nextInt(OPS.length)];
+            int a = RNG.nextInt(21) + 5;
+            int b = RNG.nextInt(21) + 5;
+            char op = OPS[RNG.nextInt(OPS.length)];
 
             int result;
             switch (op) {

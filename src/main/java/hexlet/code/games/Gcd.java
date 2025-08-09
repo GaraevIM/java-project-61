@@ -1,18 +1,18 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.concurrent.ThreadLocalRandom;
+import java.security.SecureRandom;
 
 public class Gcd {
-    private static final String DESCRIPTION =
-            "Find the greatest common divisor of given numbers.";
+    private static final String DESCRIPTION = "Find the greatest common divisor of given numbers.";
+    private static final SecureRandom RNG = new SecureRandom();
 
     public static void play() {
         String[][] rounds = new String[Engine.ROUNDS_COUNT][2];
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int a = ThreadLocalRandom.current().nextInt(1, 101);
-            int b = ThreadLocalRandom.current().nextInt(1, 101);
+            int a = RNG.nextInt(100) + 1;
+            int b = RNG.nextInt(100) + 1;
             String question = a + " " + b;
             String answer = String.valueOf(gcd(a, b));
             rounds[i][0] = question;

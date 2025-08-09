@@ -1,7 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.concurrent.ThreadLocalRandom;
+import java.security.SecureRandom;
 
 public class Progression {
     private static final String DESCRIPTION =
@@ -11,12 +11,13 @@ public class Progression {
 
     public static void play() {
         String[][] rounds = new String[Engine.ROUNDS_COUNT][2];
+        SecureRandom rng = new SecureRandom();
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int length = ThreadLocalRandom.current().nextInt(MIN_LENGTH, MAX_LENGTH + 1);
-            int start  = ThreadLocalRandom.current().nextInt(1, 21);
-            int step   = ThreadLocalRandom.current().nextInt(1, 11);
-            int hiddenIndex = ThreadLocalRandom.current().nextInt(length);
+            int length = rng.nextInt(MAX_LENGTH - MIN_LENGTH + 1) + MIN_LENGTH;
+            int start = rng.nextInt(20) + 1;
+            int step = rng.nextInt(10) + 1;
+            int hiddenIndex = rng.nextInt(length);
 
             int[] prog = generateProgression(start, step, length);
             int hiddenValue = prog[hiddenIndex];
