@@ -21,5 +21,6 @@
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=GaraevIM_java-project-61&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=GaraevIM_java-project-61)
 
-https://asciinema.org/a/7duXoEUYn1LZ18PPoFRBCYwaT
+[Проверка на чётность] https://asciinema.org/a/7duXoEUYn1LZ18PPoFRBCYwaT 
 
+[Калькулятор] https://asciinema.org/a/W9TAjqB4UD9Dko52cqwyN30q0

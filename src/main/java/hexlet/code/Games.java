@@ -1,13 +1,17 @@
 package hexlet.code;
+
 import java.util.Scanner;
 
 public class Games {
     public static int choiceGame() {
-        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
+        System.out.println("3 - Calc");
         System.out.println("0 - Exit");
-        String s = scanner.nextLine();
-        return Integer.parseInt(s);
+        System.out.print("Your choice: ");
+        Scanner sc = new Scanner(System.in);
+        String line = sc.nextLine();
+        return Integer.parseInt(line.trim());
     }
 }
