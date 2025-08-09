@@ -1,6 +1,7 @@
 package hexlet.code.games;
+
 import hexlet.code.Engine;
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Calc {
     private static final String DESCRIPTION = "What is the result of the expression?";
@@ -8,12 +9,11 @@ public class Calc {
 
     public static void play() {
         String[][] rounds = new String[Engine.ROUNDS_COUNT][2];
-        Random rnd = new Random();
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int a = rnd.nextInt(21) + 5;
-            int b = rnd.nextInt(21) + 5;
-            char op = OPS[rnd.nextInt(OPS.length)];
+            int a = ThreadLocalRandom.current().nextInt(5, 26);
+            int b = ThreadLocalRandom.current().nextInt(5, 26);
+            char op = OPS[ThreadLocalRandom.current().nextInt(OPS.length)];
 
             int result;
             switch (op) {
