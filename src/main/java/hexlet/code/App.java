@@ -1,10 +1,7 @@
 package hexlet.code;
-
 import hexlet.code.Cli;
 import hexlet.code.Games;
-import hexlet.code.games.Calc;
-import hexlet.code.games.Even;
-import hexlet.code.games.Gcd;
+import hexlet.code.games.*;
 
 public class App {
     public static void main(String[] args) {
@@ -16,10 +13,18 @@ public class App {
                 String name = Cli.getUserName();
                 System.out.println("Hello, " + name + "!");
                 return;
-            case 2: Even.play(); return;
-            case 3: Calc.play(); return;
-            case 4: Gcd.play();  return;
-            default: return;
+            case 2: Even.play();
+            return;
+            case 3: Calc.play();
+            return;
+            case 4: Gcd.play();
+            return;
+            case 5: Progression.play();
+            return;
+            case 6: Prime.play();
+            return;
+            default:
+                return;
         }
     }
 }

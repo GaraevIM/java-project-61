@@ -26,3 +26,7 @@
 [Калькулятор] https://asciinema.org/a/W9TAjqB4UD9Dko52cqwyN30q0
 
 [НОД] https://asciinema.org/a/IsOHm7cxapIV2JULeEG2CLR1T
+
+[Арифметическая прогрессия] https://asciinema.org/a/veAV4q3wvnSMhS2xTSPSLELf1
+
+[Простое ли число?] https://asciinema.org/a/J4EzryaZ4A3NO5yleNahoe1Kn
