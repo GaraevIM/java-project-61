@@ -1,13 +1,5 @@
 setup:
-	@if [ -d code/app ]; then \
-		cd code/app && ./gradlew clean installDist; \
-	else \
-		./gradlew clean installDist; \
-	fi
+cd code/app && ./gradlew clean installdist
 
 run-dist:
-	@if [ -x code/app/build/install/app/bin/app ]; then \
-		code/app/build/install/app/bin/app; \
-	else \
-		build/install/app/bin/app; \
-	fi
+code/app/build/install/app/bin/app
