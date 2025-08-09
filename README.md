@@ -24,3 +24,5 @@
 [Проверка на чётность] https://asciinema.org/a/7duXoEUYn1LZ18PPoFRBCYwaT 
 
 [Калькулятор] https://asciinema.org/a/W9TAjqB4UD9Dko52cqwyN30q0
+
+[НОД] https://asciinema.org/a/IsOHm7cxapIV2JULeEG2CLR1T
