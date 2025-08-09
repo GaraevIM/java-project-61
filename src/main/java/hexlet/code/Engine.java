@@ -6,7 +6,7 @@ public class Engine {
 
     public static void run(String gameDescription, String[][] roundsData) {
         System.out.println("Welcome to the Brain Games!");
-        String name = Cli.getUserName(); // верни имя из Cli
+        String name = Cli.getUserName();
         System.out.println("Hello, " + name + "!");
         System.out.println(gameDescription);
 
@@ -30,4 +30,5 @@ public class Engine {
         }
         System.out.println("Congratulations, " + name + "!");
     }
+
 }
