@@ -1,5 +1,5 @@
 setup:
-cd code/app && ./gradlew clean installdist
+	cd code/app && ./gradlew clean installdist
 
 run-dist:
-code/app/build/install/app/bin/app
+	code/app/build/install/app/bin/app
