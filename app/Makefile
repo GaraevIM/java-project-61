@@ -11,10 +11,3 @@ run-dist:
 	else \
 		build/install/app/bin/app; \
 	fi
-
-test:
-	@if [ -d code/app ]; then \
-		cd code/app && ./gradlew test; \
-	else \
-		./gradlew test; \
-	fi
