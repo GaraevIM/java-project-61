@@ -1,5 +1,5 @@
 ### Hexlet tests and linter status:
-[![Hexlet Check](https://github.com/GaraevIM/java-project-61/actions/workflows/hexlet-check.yml/badge.svg?branch=main&event=push)](https://github.com/GaraevIM/java-project-61/actions/workflows/hexlet-check.yml)
+[![Actions Status](https://github.com/GaraevIM/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/GaraevIM/java-project-61/actions)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=GaraevIM_java-project-61&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=GaraevIM_java-project-61)
 
@@ -20,3 +20,13 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=GaraevIM_java-project-61&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=GaraevIM_java-project-61)
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=GaraevIM_java-project-61&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=GaraevIM_java-project-61)
+
+[Проверка на чётность] https://asciinema.org/a/7duXoEUYn1LZ18PPoFRBCYwaT
+
+[Калькулятор] https://asciinema.org/a/W9TAjqB4UD9Dko52cqwyN30q0
+
+[НОД] https://asciinema.org/a/IsOHm7cxapIV2JULeEG2CLR1T
+
+[Арифметическая прогрессия] https://asciinema.org/a/veAV4q3wvnSMhS2xTSPSLELf1
+
+[Простое ли число?] https://asciinema.org/a/J4EzryaZ4A3NO5yleNahoe1Kn
