@@ -11,7 +11,9 @@ public class Prime {
         String[][] rounds = new String[Engine.ROUNDS_COUNT][2];
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int n = RNG.nextInt(100) + 2;
+            final int maxRandomNum = 100;
+            final int shift = 2;
+            int n = RNG.nextInt(maxRandomNum) + shift;
             rounds[i][0] = String.valueOf(n);
             rounds[i][1] = isPrime(n) ? "yes" : "no";
         }

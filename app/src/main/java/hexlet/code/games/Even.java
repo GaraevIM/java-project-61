@@ -11,7 +11,9 @@ public class Even {
         String[][] rounds = new String[Engine.ROUNDS_COUNT][2];
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int n = RNG.nextInt(101);
+            final int maxRandomNum = 100;
+            final int shift = 1;
+            int n = RNG.nextInt(maxRandomNum) + shift;
             String question = String.valueOf(n);
             String answer = (n % 2 == 0) ? "yes" : "no";
             rounds[i][0] = question;

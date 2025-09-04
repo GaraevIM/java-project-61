@@ -12,8 +12,10 @@ public class Calc {
         String[][] rounds = new String[Engine.ROUNDS_COUNT][2];
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int a = RNG.nextInt(21) + 5;
-            int b = RNG.nextInt(21) + 5;
+            final int maxRandomNum = 21;
+            final int shift = 5;
+            int a = RNG.nextInt(maxRandomNum) + shift;
+            int b = RNG.nextInt(maxRandomNum) + shift;
             char op = OPS[RNG.nextInt(OPS.length)];
 
             int result;

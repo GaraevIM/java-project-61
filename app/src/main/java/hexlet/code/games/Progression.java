@@ -15,8 +15,11 @@ public class Progression {
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
             int length = rng.nextInt(MAX_LENGTH - MIN_LENGTH + 1) + MIN_LENGTH;
-            int start = rng.nextInt(20) + 1;
-            int step = rng.nextInt(10) + 1;
+            final int maxRandomNumStart = 20;
+            final int maxRandomNumStep = 10;
+            final int shift = 1;
+            int start = rng.nextInt(maxRandomNumStart) + shift;
+            int step = rng.nextInt(maxRandomNumStep) + shift;
             int hiddenIndex = rng.nextInt(length);
 
             int[] prog = generateProgression(start, step, length);

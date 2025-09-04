@@ -11,8 +11,10 @@ public class Gcd {
         String[][] rounds = new String[Engine.ROUNDS_COUNT][2];
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int a = RNG.nextInt(100) + 1;
-            int b = RNG.nextInt(100) + 1;
+            final int maxRandomNum = 100;
+            final int shift = 1;
+            int a = RNG.nextInt(maxRandomNum) + shift;
+            int b = RNG.nextInt(maxRandomNum) + shift;
             String question = a + " " + b;
             String answer = String.valueOf(gcd(a, b));
             rounds[i][0] = question;

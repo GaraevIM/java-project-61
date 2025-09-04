@@ -1,26 +1,37 @@
 package hexlet.code;
 
-import hexlet.code.games.*;
+import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
+import hexlet.code.games.Gcd;
+import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 public class App {
     public static void main(String[] args) {
         int choice = Games.choiceGame();
+        final int menuExit = 0;
+        final int menuGreet = 1;
+        final int menuEven = 2;
+        final int menuCalc = 3;
+        final int menuGcd = 4;
+        final int menuProgression = 5;
+        final int menuPrime = 6;
         switch (choice) {
-            case 0: return;
-            case 1:
+            case menuExit: return;
+            case menuGreet:
                 System.out.println("Welcome to the Brain Games!");
                 String name = Cli.getUserName();
                 System.out.println("Hello, " + name + "!");
                 return;
-            case 2: Even.play();
+            case menuEven: Even.play();
                 return;
-            case 3: Calc.play();
+            case menuCalc: Calc.play();
                 return;
-            case 4: Gcd.play();
+            case menuGcd: Gcd.play();
                 return;
-            case 5: Progression.play();
+            case menuProgression: Progression.play();
                 return;
-            case 6: Prime.play();
+            case menuPrime: Prime.play();
                 return;
             default:
                 return;
