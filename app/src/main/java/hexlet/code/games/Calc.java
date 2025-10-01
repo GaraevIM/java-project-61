@@ -6,6 +6,8 @@ import hexlet.code.Utils;
 public class Calc {
     private static final String DESCRIPTION = "What is the result of the expression?";
     private static final char[] OPS = {'+', '-', '*'};
+    private static final int MIN = 5;
+    private static final int MAX = 25;
 
     private static int eval(int a, int b, char op) {
         return switch (op) {
@@ -20,9 +22,8 @@ public class Calc {
         String[][] rounds = new String[Engine.ROUNDS_COUNT][2];
 
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            // ранее было RNG.nextInt(21) + 5 -> диапазон 5..25
-            int a = Utils.generateNumber(5, 25);
-            int b = Utils.generateNumber(5, 25);
+            int a = Utils.generateNumber(MIN, MAX);
+            int b = Utils.generateNumber(MIN, MAX);
             char op = OPS[Utils.generateNumber(0, OPS.length - 1)];
 
             String question = a + " " + op + " " + b;
